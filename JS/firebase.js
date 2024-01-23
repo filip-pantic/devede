@@ -1,18 +1,22 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-import {
-  getFirestore, collection, addDoc, query, where, getDocs, deleteDoc, doc,
-  updateDoc,
-} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+import { getFirestore, collection, addDoc, query, where, getDocs, deleteDoc, doc, updateDoc } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBGA_YW6b95gnjAAhasGuWWLtKiuQ_Jh1k",
-  authDomain: "devede-28650.firebaseapp.com",
-  projectId: "devede-28650",
-  storageBucket: "devede-28650.appspot.com",
-  messagingSenderId: "126905402550",
-  appId: "1:126905402550:web:bc99ff805be8f43874d217"
+  apiKey: "AIzaSyBJBcatIFYzgJYUoiBpP4P4-XugoDZKm6c",
+  authDomain: "dvd1-e092a.firebaseapp.com",
+  projectId: "dvd1-e092a",
+  storageBucket: "dvd1-e092a.appspot.com",
+  messagingSenderId: "717316898679",
+  appId: "1:717316898679:web:e20ae9bac2ccf1b61dab72"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+// Initialize Firestore
 const db = getFirestore(app);
 
+// Export the necessary Firestore functionalities
+export { db, collection, addDoc, query, where, getDocs, deleteDoc, doc, updateDoc };
